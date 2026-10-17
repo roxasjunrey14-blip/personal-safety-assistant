@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "Personal Safety Assistant",
+    "slug": "personal-safety-assistant",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Personal Safety Assistant needs camera access to capture incident photos for emergency reports.",
+        "NSPhotoLibraryUsageDescription": "Personal Safety Assistant needs photo library access to attach incident evidence.",
+        "NSLocationWhenInUseUsageDescription": "Personal Safety Assistant needs your GPS location to display coordinates and send emergency alerts."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font"
+    ]
+  }
+}
